@@ -38,45 +38,50 @@
 
   <!-- SERVIÇOS CARROSSEL PRO -->
   <section id="servicos">
-    <h2>Serviços</h2>
+  <h2>Serviços</h2>
 
-    <div class="carousel-wrapper">
+  <div class="carousel-wrapper">
 
-      <button class="arrow left" onclick="scrollServices(-1)">&#10094;</button>
+    <button class="arrow" onclick="scrollServices(-1)">&#10094;</button>
 
-      <div class="carousel" id="carousel">
+    <div class="carousel" id="carousel">
 
-        <div class="service">
-          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
-          <p>Barba</p>
-        </div>
-
-        <div class="service">
-          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
-          <p>Corte Masculino</p>
-        </div>
-
-        <div class="service">
-          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
-          <p>Luzes Masculinas</p>
-        </div>
-
-        <div class="service">
-          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486">
-          <p>Camuflagem</p>
-        </div>
-
-        <div class="service">
-          <img src="https://images.unsplash.com/photo-1605980776566-0486c3ac7617">
-          <p>Sobrancelha</p>
-        </div>
-
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c">
+        <h3>Corte Masculino</h3>
+        <p>Estilo moderno adaptado ao seu rosto, com acabamento profissional.</p>
       </div>
 
-      <button class="arrow right" onclick="scrollServices(1)">&#10095;</button>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486">
+        <h3>Barba</h3>
+        <p>Desenho preciso e alinhamento perfeito para um visual limpo.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+        <h3>Luzes Masculinas</h3>
+        <p>Realce do cabelo com naturalidade e estilo moderno.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
+        <h3>Camuflagem</h3>
+        <p>Disfarce de fios brancos mantendo aparência jovem e natural.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f">
+        <h3>Sobrancelha</h3>
+        <p>Design limpo e simétrico para valorizar seu rosto.</p>
+      </div>
 
     </div>
-  </section>
+
+    <button class="arrow" onclick="scrollServices(1)">&#10095;</button>
+
+  </div>
+ </section>
 
   <!-- PORTFÓLIO -->
   <section id="portfolio">
@@ -142,3 +147,16 @@ document.querySelectorAll('nav a').forEach(a => {
 
 </body>
 </html>
+<script>
+const carousel = document.getElementById("carousel");
+
+function scrollServices(dir) {
+  carousel.scrollBy({ left: dir * 240, behavior: "smooth" });
+}
+
+/* impede scroll da página quando mexe no carrossel */
+carousel.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  carousel.scrollLeft += e.deltaY;
+}, { passive: false });
+</script>

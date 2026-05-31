@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Barbearia</title>
+  <title>Barbearia do X</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -14,37 +14,66 @@
 
 <body>
 
+<header>
+  <div class="overlay"></div>
+
+  <h1>Barbearia do X</h1>
+
+  <p>+55 0000000000 • @barbeariadox</p>
+
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#avaliacoes">Avaliações</a>
+  </nav>
+
+  <a class="btn" href="https://wa.me/5500000000000">Agendar no WhatsApp</a>
+</header>
+
 <div class="container">
 
-  <header>
-    <h1>Barbearia Studio</h1>
-
-    <nav>
-      <a href="#servicos">Serviços</a>
-      <a href="#portfolio">Portfólio</a>
-      <a href="#avaliacoes">Avaliações</a>
-    </nav>
-
-    <a class="btn" href="https://wa.me/5500000000000">Agendar no WhatsApp</a>
-  </header>
-
   <section class="hero">
-    <h2>Estilo, precisão e cuidado em cada corte</h2>
+    <h2>Estilo, precisão e identidade em cada corte</h2>
   </section>
 
-  <!-- SERVIÇOS CARROSSEL -->
+  <!-- SERVIÇOS CARROSSEL PRO -->
   <section id="servicos">
     <h2>Serviços</h2>
 
-    <div class="carousel">
+    <div class="carousel-wrapper">
 
-      <div class="service">Corte Masculino</div>
-      <div class="service">Barba Profissional</div>
-      <div class="service">Luzes / Mechas</div>
-      <div class="service">Camuflagem de fios brancos</div>
-      <div class="service">Sobrancelha</div>
-      <div class="service">Hidratação</div>
-      <div class="service">Pezinho / Acabamento</div>
+      <button class="arrow left" onclick="scrollServices(-1)">&#10094;</button>
+
+      <div class="carousel" id="carousel">
+
+        <div class="service">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
+          <p>Barba</p>
+        </div>
+
+        <div class="service">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+          <p>Corte Masculino</p>
+        </div>
+
+        <div class="service">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+          <p>Luzes Masculinas</p>
+        </div>
+
+        <div class="service">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486">
+          <p>Camuflagem</p>
+        </div>
+
+        <div class="service">
+          <img src="https://images.unsplash.com/photo-1605980776566-0486c3ac7617">
+          <p>Sobrancelha</p>
+        </div>
+
+      </div>
+
+      <button class="arrow right" onclick="scrollServices(1)">&#10095;</button>
 
     </div>
   </section>
@@ -65,35 +94,51 @@
     <h2>Avaliações</h2>
 
     <div class="review">
-      <img class="avatar" src="https://i.pravatar.cc/50?img=12">
+      <img class="avatar" src="https://i.pravatar.cc/60?img=11">
       <div>
         <b>João Silva</b>
         <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Star_rating_5_of_5.png">
-        <p>Atendimento excelente, corte perfeito.</p>
+        <p>Atendimento impecável, sempre saio satisfeito.</p>
       </div>
     </div>
 
     <div class="review">
-      <img class="avatar" src="https://i.pravatar.cc/50?img=32">
+      <img class="avatar" src="https://i.pravatar.cc/60?img=12">
       <div>
-        <b>Lucas Mendes</b>
+        <b>Pedro Santos</b>
         <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Star_rating_5_of_5.png">
-        <p>Ambiente muito bom e profissionais top.</p>
+        <p>Barbearia muito profissional, recomendo demais.</p>
       </div>
     </div>
 
     <div class="review">
-      <img class="avatar" src="https://i.pravatar.cc/50?img=45">
+      <img class="avatar" src="https://i.pravatar.cc/60?img=15">
       <div>
-        <b>Rafael Costa</b>
+        <b>Lucas Almeida</b>
         <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Star_rating_5_of_5.png">
-        <p>Sempre saio satisfeito, recomendo demais.</p>
+        <p>Corte perfeito e atendimento rápido.</p>
       </div>
     </div>
 
   </section>
 
 </div>
+
+<script>
+function scrollServices(dir) {
+  const el = document.getElementById("carousel");
+  const width = 220;
+  el.scrollBy({ left: dir * width, behavior: "smooth" });
+}
+
+document.querySelectorAll('nav a').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(a.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
 
 </body>
 </html>

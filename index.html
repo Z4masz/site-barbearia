@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Barbearia do X</title>
+  <title>Barbearia</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
@@ -15,103 +14,86 @@
 
 <body>
 
+<div class="container">
+
   <header>
-    <h1>Barbearia do X</h1>
-    <p>(41) 9 9663-7244 • Curitiba - PR</p>
+    <h1>Barbearia Studio</h1>
 
     <nav>
       <a href="#servicos">Serviços</a>
-      <a href="#clube">Clube</a>
       <a href="#portfolio">Portfólio</a>
-      <a href="#contato">Contato</a>
+      <a href="#avaliacoes">Avaliações</a>
     </nav>
 
-    <a class="btn" href="https://wa.me/5541996637244">Agendar no WhatsApp</a>
+    <a class="btn" href="https://wa.me/5500000000000">Agendar no WhatsApp</a>
   </header>
 
   <section class="hero">
-    <h2>VENHA NOS CONHECER</h2>
-    <p>Estilo, precisão e cuidado em cada corte.</p>
+    <h2>Estilo, precisão e cuidado em cada corte</h2>
   </section>
 
+  <!-- SERVIÇOS CARROSSEL -->
   <section id="servicos">
     <h2>Serviços</h2>
 
-    <div class="grid">
+    <div class="carousel">
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" />
-        <h3>Corte Masculino</h3>
-        <p>Estilo moderno adaptado ao seu rosto.</p>
-        <span>R$ 45</span>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033" />
-        <h3>Barba</h3>
-        <p>Acabamento preciso e visual alinhado.</p>
-        <span>R$ 35</span>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486" />
-        <h3>Camuflagem</h3>
-        <p>Disfarce de fios brancos com naturalidade.</p>
-        <span>R$ 60</span>
-      </div>
+      <div class="service">Corte Masculino</div>
+      <div class="service">Barba Profissional</div>
+      <div class="service">Luzes / Mechas</div>
+      <div class="service">Camuflagem de fios brancos</div>
+      <div class="service">Sobrancelha</div>
+      <div class="service">Hidratação</div>
+      <div class="service">Pezinho / Acabamento</div>
 
     </div>
   </section>
 
-  <section id="clube">
-    <h2>Nosso Clube</h2>
-
-    <div class="clube-box">
-      <p><b>Corte ilimitado + barba ilimitada</b></p>
-      <p>Agenda exclusiva e descontos em produtos</p>
-      <p>Indique amigos e ganhe benefícios</p>
-
-      <h3>R$ 147,90 / mês</h3>
-
-      <button>Assinar Clube</button>
-    </div>
-  </section>
-
+  <!-- PORTFÓLIO -->
   <section id="portfolio">
     <h2>Portfólio</h2>
 
     <div class="grid">
-      <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb" />
-      <img src="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1" />
-      <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c" />
+      <img src="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1">
+      <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c">
+      <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f">
     </div>
   </section>
 
+  <!-- AVALIAÇÕES -->
   <section id="avaliacoes">
-    <h2>Google Reviews</h2>
+    <h2>Avaliações</h2>
 
-    <div class="review">⭐ Excelente atendimento e corte perfeito — João</div>
-    <div class="review">⭐ Profissionais muito bons — Lucas</div>
-    <div class="review">⭐ Sempre saio satisfeito — Rafael</div>
+    <div class="review">
+      <img class="avatar" src="https://i.pravatar.cc/50?img=12">
+      <div>
+        <b>João Silva</b>
+        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Star_rating_5_of_5.png">
+        <p>Atendimento excelente, corte perfeito.</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img class="avatar" src="https://i.pravatar.cc/50?img=32">
+      <div>
+        <b>Lucas Mendes</b>
+        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Star_rating_5_of_5.png">
+        <p>Ambiente muito bom e profissionais top.</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img class="avatar" src="https://i.pravatar.cc/50?img=45">
+      <div>
+        <b>Rafael Costa</b>
+        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Star_rating_5_of_5.png">
+        <p>Sempre saio satisfeito, recomendo demais.</p>
+      </div>
+    </div>
+
   </section>
 
-  <section id="mapa">
-    <h2>Localização</h2>
-
-    <iframe
-      src="https://www.google.com/maps?q=R.+Augusto+de+Mari,+3671+Curitiba&output=embed"
-      width="100%"
-      height="250"
-      style="border:0;border-radius:12px;"
-      loading="lazy">
-    </iframe>
-  </section>
-
-  <footer id="contato">
-    <p>Instagram @barbeariadox</p>
-    <p>Rua Augusto de Mari, 3671 - Curitiba</p>
-  </footer>
 </div>
+
 </body>
-<div class="container"></div>
 </html>

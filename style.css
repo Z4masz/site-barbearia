@@ -5,31 +5,19 @@ body {
   color: white;
 }
 
-/* CENTRALIZA TUDO (IMPORTANTE) */
-section, header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* CONTAINER PRINCIPAL */
+/* CONTAINER CENTRAL */
 .container {
-  width: 100%;
   max-width: 1000px;
-  padding: 0 20px;
+  margin: auto;
+  padding: 20px;
 }
 
 /* HEADER */
 header {
   text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
-              url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1");
-  background-size: cover;
-  background-position: center;
+  padding: 40px 20px;
 }
 
-/* NAV */
 nav a {
   margin: 0 10px;
   color: white;
@@ -37,7 +25,6 @@ nav a {
   opacity: 0.8;
 }
 
-/* BOTÃO */
 .btn {
   display: inline-block;
   margin-top: 15px;
@@ -52,69 +39,60 @@ nav a {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px;
+  opacity: 0.9;
 }
 
-/* SEÇÕES */
-section {
-  padding: 40px 20px;
+/* CARROSSEL SERVIÇOS */
+.carousel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
 }
 
-/* GRID GERAL */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  width: 100%;
-  max-width: 1000px;
-}
-
-/* CARD */
-.card {
+.service {
+  min-width: 180px;
   background: #1a1a1a;
   padding: 15px;
   border-radius: 12px;
-  overflow: hidden;
+  text-align: center;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
-/* IMAGEM NORMALIZADA */
-.card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
+/* PORTFÓLIO */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
 }
 
-/* PORTFÓLIO (CORREÇÃO PRINCIPAL) */
-#portfolio .grid img {
+.grid img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 12px;
 }
 
-/* CLUBE */
-.clube-box {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 600px;
-}
-
-/* REVIEWS */
+/* AVALIAÇÕES */
 .review {
-  margin: 10px 0;
-  opacity: 0.9;
-  max-width: 600px;
-  text-align: center;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #000;
-  opacity: 0.7;
+.avatar {
+  border-radius: 50%;
+}
+
+.stars {
+  width: 100px;
+  margin: 5px 0;
 }

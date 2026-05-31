@@ -5,16 +5,31 @@ body {
   color: white;
 }
 
+/* CENTRALIZA TUDO (IMPORTANTE) */
+section, header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
 /* HEADER */
 header {
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
               url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1");
   background-size: cover;
   background-position: center;
 }
 
+/* NAV */
 nav a {
   margin: 0 10px;
   color: white;
@@ -43,27 +58,26 @@ nav a {
 /* SEÇÕES */
 section {
   padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
 }
 
-/* GRID */
+/* GRID GERAL */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+  width: 100%;
+  max-width: 1000px;
 }
 
-/* CARD (CORRIGIDO) */
+/* CARD */
 .card {
   background: #1a1a1a;
   padding: 15px;
   border-radius: 12px;
-
   overflow: hidden;
 }
 
-/* IMAGEM (CORRIGIDA - ISSO RESOLVE SEU BUG) */
+/* IMAGEM NORMALIZADA */
 .card img {
   width: 100%;
   height: 160px;
@@ -72,10 +86,12 @@ section {
   display: block;
 }
 
-/* PREÇO */
-.card span {
-  color: #25D366;
-  font-weight: bold;
+/* PORTFÓLIO (CORREÇÃO PRINCIPAL) */
+#portfolio .grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 /* CLUBE */
@@ -84,12 +100,15 @@ section {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
+  max-width: 600px;
 }
 
 /* REVIEWS */
 .review {
   margin: 10px 0;
   opacity: 0.9;
+  max-width: 600px;
+  text-align: center;
 }
 
 /* FOOTER */

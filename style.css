@@ -5,6 +5,7 @@ body {
   color: white;
 }
 
+/* HEADER */
 header {
   text-align: center;
   padding: 40px 20px;
@@ -21,6 +22,7 @@ nav a {
   opacity: 0.8;
 }
 
+/* BOTÃO */
 .btn {
   display: inline-block;
   margin-top: 15px;
@@ -32,39 +34,51 @@ nav a {
   font-weight: bold;
 }
 
+/* HERO */
 .hero {
   text-align: center;
   padding: 40px 20px;
 }
 
+/* SEÇÕES */
 section {
   padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
 }
 
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
+/* CARD (CORRIGIDO) */
 .card {
   background: #1a1a1a;
   padding: 15px;
   border-radius: 12px;
+
+  overflow: hidden;
 }
 
+/* IMAGEM (CORRIGIDA - ISSO RESOLVE SEU BUG) */
 .card img {
   width: 100%;
+  height: 160px;
+  object-fit: cover;
   border-radius: 10px;
+  display: block;
 }
 
+/* PREÇO */
 .card span {
   color: #25D366;
   font-weight: bold;
 }
 
+/* CLUBE */
 .clube-box {
   background: #1a1a1a;
   padding: 20px;
@@ -72,11 +86,13 @@ section {
   text-align: center;
 }
 
+/* REVIEWS */
 .review {
   margin: 10px 0;
   opacity: 0.9;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 30px;

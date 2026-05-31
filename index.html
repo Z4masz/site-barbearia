@@ -6,366 +6,375 @@
   <title>Barbearia Premier | Black Label — Curitiba</title>
   <meta name="description" content="Barbearia Premier Black Label. Cortes visagistas, barba na navalha e experiência premium em Curitiba. Agende agora.">
 
-  <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ══════════════════════════════════════
-       NAVBAR
-  ══════════════════════════════════════ -->
-  <header class="navbar" id="navbar">
-    <div class="container">
-      <div class="navbar__inner">
+<!-- ══ MOBILE MENU ══ -->
+<nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menu mobile">
+  <button class="mob-close" id="mobClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
+  <a href="#inicio"      class="mob-link">Início</a>
+  <a href="#servicos"    class="mob-link">Serviços</a>
+  <a href="#depoimentos" class="mob-link">Avaliações</a>
+  <a href="#contato"     class="mob-link">Contato</a>
+  <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:20px;">
+    <i class="fas fa-calendar-check"></i> Agendar Agora
+  </a>
+</nav>
 
-        <a href="#inicio" class="logo" aria-label="Barbearia Premier">
-          <div class="logo__mark">
-            <span class="logo__bl">BL</span>
-          </div>
-          <div class="logo__txt">
-            <span class="logo__name">Premier</span>
-            <span class="logo__tag">Black Label</span>
-          </div>
-        </a>
+<!-- ══ NAVBAR ══ -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar__inner">
 
-        <nav class="nav-links" aria-label="Principal">
-          <a href="#inicio"      class="nav-link">Início</a>
-          <a href="#servicos"    class="nav-link">Serviços</a>
-          <a href="#depoimentos" class="nav-link">Avaliações</a>
-          <a href="#contato"     class="nav-link">Contato</a>
-        </nav>
-
-        <div class="navbar__actions">
-          <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="btn btn-gold nav-cta">
-            <i class="fas fa-calendar-check"></i> Agendar
-          </a>
-          <button class="hamburger" id="hamburger" aria-label="Menu">
-            <span></span><span></span><span></span>
-          </button>
+      <a href="#inicio" class="logo" aria-label="Barbearia Premier">
+        <div class="logo__diamond">
+          <span class="logo__ltr">BL</span>
         </div>
+        <div class="logo__txt">
+          <div class="logo__brand">Premier</div>
+          <div class="logo__sub">Black Label</div>
+        </div>
+      </a>
 
+      <nav class="nav-links" role="navigation" aria-label="Principal">
+        <a href="#inicio"      class="nav-link">Início</a>
+        <a href="#servicos"    class="nav-link">Serviços</a>
+        <a href="#depoimentos" class="nav-link">Avaliações</a>
+        <a href="#contato"     class="nav-link">Contato</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:12px;">
+        <a href="https://wa.me/5541999999999" target="_blank" rel="noopener"
+           class="btn btn-gold nav-btn-d" style="padding:11px 22px;font-size:10px;">
+          <i class="fas fa-calendar-check"></i> Agendar
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ══ HERO ══ -->
+<section id="inicio" class="hero" aria-label="Hero">
+  <div class="hero__bg"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__content">
+
+    <div class="hero__eyebrow">
+      <div class="hero__line"></div>
+      <span class="hero__etag">Curitiba — Batel — Est. 2015</span>
+      <div class="hero__line"></div>
+    </div>
+
+    <h1 class="hero__h1">
+      Arte que define<br><em>o homem que você é.</em>
+    </h1>
+
+    <p class="hero__sub">
+      Cortes visagistas, barba na navalha à moda antiga e uma experiência
+      pensada para quem valoriza cada detalhe.
+    </p>
+
+    <div class="hero__ctas">
+      <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="btn btn-gold">
+        <i class="fas fa-calendar-check"></i> Agendar Agora
+      </a>
+      <a href="#servicos" class="btn btn-outline">
+        Ver Serviços <i class="fas fa-arrow-right" style="font-size:10px;"></i>
+      </a>
+    </div>
+
+    <div class="hero__stats">
+      <div style="text-align:center;">
+        <div class="hero__sv">4.9 ★</div>
+        <div class="hero__sl">Google</div>
+      </div>
+      <div class="hero__div" aria-hidden="true"></div>
+      <div style="text-align:center;">
+        <div class="hero__sv">+10</div>
+        <div class="hero__sl">Anos de Tradição</div>
+      </div>
+      <div class="hero__div" aria-hidden="true"></div>
+      <div style="text-align:center;">
+        <div class="hero__sv">8</div>
+        <div class="hero__sl">Profissionais Elite</div>
+      </div>
+      <div class="hero__div" aria-hidden="true"></div>
+      <div style="text-align:center;">
+        <div class="hero__sv">VIP</div>
+        <div class="hero__sl">Dia do Noivo</div>
       </div>
     </div>
-  </header>
 
-  <!-- Menu mobile -->
-  <div class="mobile-overlay" id="mobileOverlay"></div>
-  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu mobile">
-    <button class="mob-close" id="mobClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
-    <a href="#inicio"      class="mob-link">Início</a>
-    <a href="#servicos"    class="mob-link">Serviços</a>
-    <a href="#depoimentos" class="mob-link">Avaliações</a>
-    <a href="#contato"     class="mob-link">Contato</a>
-    <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:20px;justify-content:center;">
-      <i class="fas fa-calendar-check"></i> Agendar Agora
-    </a>
-  </nav>
+  </div>
+  <div class="hero__scroll" aria-hidden="true">
+    <span class="hero__slbl">Role</span>
+    <div class="hero__sline"></div>
+  </div>
+</section>
 
-  <main>
-
-    <!-- ══════════════════════════════════════
-         HERO
-    ══════════════════════════════════════ -->
-    <section id="inicio" class="hero" aria-label="Hero Barbearia Premier">
-
-      <!-- Fundo com imagem e overlay -->
-      <div class="hero__bg"></div>
-      <div class="hero__overlay"></div>
-
-      <!-- Ornamentos -->
-      <div class="hero__deco hero__deco--tl" aria-hidden="true"></div>
-      <div class="hero__deco hero__deco--br" aria-hidden="true"></div>
-
-      <div class="hero__content">
-
-        <div class="hero__eyebrow" data-anim="fade-up" data-delay="0">
-          <div class="hero__line"></div>
-          <span>Curitiba — Est. 2015</span>
-          <div class="hero__line"></div>
-        </div>
-
-        <h1 class="hero__h1" data-anim="fade-up" data-delay="1">
-          Arte que define<br><em>o homem que você é.</em>
-        </h1>
-
-        <p class="hero__sub" data-anim="fade-up" data-delay="2">
-          Cortes visagistas, barba na navalha à moda antiga e uma experiência<br>
-          pensada para quem valoriza cada detalhe.
-        </p>
-
-        <div class="hero__ctas" data-anim="fade-up" data-delay="3">
-          <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="btn btn-gold">
-            <i class="fas fa-calendar-check"></i> Agendar pelo WhatsApp
-          </a>
-          <a href="#servicos" class="btn btn-outline">
-            Ver Serviços <i class="fas fa-arrow-down" style="font-size:10px;"></i>
-          </a>
-        </div>
-
-        <div class="hero__stats" data-anim="fade-up" data-delay="4">
-          <div class="hero__stat">
-            <strong>4.9 ★</strong>
-            <span>Google</span>
-          </div>
-          <div class="hero__divider"></div>
-          <div class="hero__stat">
-            <strong>+10</strong>
-            <span>Anos de tradição</span>
-          </div>
-          <div class="hero__divider"></div>
-          <div class="hero__stat">
-            <strong>8</strong>
-            <span>Profissionais</span>
-          </div>
-        </div>
-
+<!-- ══ RIBBON ══ -->
+<div class="ribbon">
+  <div class="container">
+    <div class="ribbon__grid">
+      <div class="ribbon__item">
+        <div class="ri-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="ri-val">Batel</div>
+        <div class="ri-lbl">Curitiba, PR</div>
       </div>
-
-      <!-- Scroll hint -->
-      <div class="hero__scroll" aria-hidden="true">
-        <span>Role</span>
-        <div class="hero__scroll-line"></div>
+      <div class="ribbon__item">
+        <div class="ri-icon"><i class="fas fa-hand-sparkles"></i></div>
+        <div class="ri-val">Barba & Corte</div>
+        <div class="ri-lbl">Na Navalha Clássica</div>
       </div>
+      <div class="ribbon__item">
+        <div class="ri-icon"><i class="fas fa-star"></i></div>
+        <div class="ri-val">4.9 ★</div>
+        <div class="ri-lbl">+800 avaliações</div>
+      </div>
+      <div class="ribbon__item">
+        <div class="ri-icon"><i class="fas fa-clock"></i></div>
+        <div class="ri-val">Ter – Sáb</div>
+        <div class="ri-lbl">09h às 19h</div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    </section>
+<!-- ══ SERVIÇOS ══ -->
+<section id="servicos" class="section section--dark">
+  <div class="container">
 
-    <!-- ══════════════════════════════════════
-         SERVIÇOS
-    ══════════════════════════════════════ -->
-    <section id="servicos" class="section section--dark">
-      <div class="container">
+    <div class="sh fi">
+      <span class="sh__tag">O que oferecemos</span>
+      <h2 class="sh__title">Serviços & Tabela de Preços</h2>
+      <div class="sh__rule"></div>
+      <p class="sh__lead">Cada serviço realizado com precisão, produtos premium e o tempo que você merece.</p>
+    </div>
 
-        <div class="sh" data-anim="fade-up">
-          <span class="sh__tag">O que oferecemos</span>
-          <h2 class="sh__title">Serviços & Tabela de Preços</h2>
-          <div class="sh__rule"></div>
-          <p class="sh__lead">Cada serviço realizado com precisão cirúrgica, produtos premium e o tempo que você merece.</p>
-        </div>
-
-        <div class="services-grid">
-
-          <div class="svc-card" data-anim="fade-up" data-delay="0">
-            <div class="svc-card__icon"><i class="fas fa-cut"></i></div>
-            <h3 class="svc-card__name">Corte Visagista</h3>
-            <p class="svc-card__desc">Análise do rosto, consulta personalizada e execução impecável para valorizar seus traços.</p>
-            <div class="svc-card__footer">
-              <span class="svc-card__price">R$ 95</span>
-              <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="svc-card__btn">Agendar <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="svc-card svc-card--featured" data-anim="fade-up" data-delay="1">
-            <div class="svc-card__badge">Mais pedido</div>
-            <div class="svc-card__icon"><i class="fas fa-user-tie"></i></div>
-            <h3 class="svc-card__name">Corte + Barba</h3>
-            <p class="svc-card__desc">A dupla clássica: corte personalizado com barba na navalha e toalha quente. Experiência completa.</p>
-            <div class="svc-card__footer">
-              <span class="svc-card__price">R$ 150</span>
-              <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="svc-card__btn">Agendar <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="svc-card" data-anim="fade-up" data-delay="2">
-            <div class="svc-card__icon"><i class="fas fa-spa"></i></div>
-            <h3 class="svc-card__name">Barba Completa</h3>
-            <p class="svc-card__desc">Navalha, creme de barbear artesanal, toalha quente e finalização com balm hidratante.</p>
-            <div class="svc-card__footer">
-              <span class="svc-card__price">R$ 70</span>
-              <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="svc-card__btn">Agendar <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="svc-card" data-anim="fade-up" data-delay="0">
-            <div class="svc-card__icon"><i class="fas fa-hand-sparkles"></i></div>
-            <h3 class="svc-card__name">Hidratação Capilar</h3>
-            <p class="svc-card__desc">Tratamento profundo com máscaras premium para cabelos secos, quebradiços ou quimicamente tratados.</p>
-            <div class="svc-card__footer">
-              <span class="svc-card__price">R$ 80</span>
-              <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="svc-card__btn">Agendar <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="svc-card" data-anim="fade-up" data-delay="1">
-            <div class="svc-card__icon"><i class="fas fa-gem"></i></div>
-            <h3 class="svc-card__name">Dia do Noivo</h3>
-            <p class="svc-card__desc">Pacote exclusivo: corte, barba, hidratação e massagem relaxante para o dia mais importante.</p>
-            <div class="svc-card__footer">
-              <span class="svc-card__price">a partir de R$ 320</span>
-              <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="svc-card__btn">Agendar <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="svc-card" data-anim="fade-up" data-delay="2">
-            <div class="svc-card__icon"><i class="fas fa-briefcase-medical"></i></div>
-            <h3 class="svc-card__name">Massagem Relaxante</h3>
-            <p class="svc-card__desc">50 minutos de alívio real. Técnicas terapêuticas aplicadas por profissional especializado.</p>
-            <div class="svc-card__footer">
-              <span class="svc-card__price">R$ 130</span>
-              <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="svc-card__btn">Agendar <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
+    <!-- Destaque principal -->
+    <div class="vis-card fi">
+      <div class="vis-icon"><i class="fas fa-user-tie"></i></div>
+      <div>
+        <div class="vis-badge"><i class="fas fa-crown"></i> Mais Pedido</div>
+        <h3 class="vis-title">Corte + Barba Completa</h3>
+        <p class="vis-desc">A dupla clássica: corte visagista personalizado com barba na navalha, toalha quente e finalização com produtos premium. A experiência mais completa da casa.</p>
+        <div class="vis-checks">
+          <span class="vis-check"><i class="fas fa-check"></i> Visagismo incluso</span>
+          <span class="vis-check"><i class="fas fa-check"></i> Toalha quente</span>
+          <span class="vis-check"><i class="fas fa-check"></i> Produtos premium</span>
         </div>
       </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         DEPOIMENTOS
-    ══════════════════════════════════════ -->
-    <section id="depoimentos" class="section section--black">
-      <div class="container">
-
-        <div class="sh" data-anim="fade-up">
-          <span class="sh__tag">O que dizem sobre nós</span>
-          <h2 class="sh__title">Avaliações dos Clientes</h2>
-          <div class="sh__rule"></div>
-          <p class="sh__lead">Mais de 800 avaliações 5 estrelas no Google. Veja o que nossos clientes falam.</p>
-        </div>
-
-        <div class="reviews-grid">
-
-          <div class="review-card" data-anim="fade-up" data-delay="0">
-            <div class="review-card__stars">★★★★★</div>
-            <p class="review-card__text">"Melhor barbearia que já fui em Curitiba. O Wagner tem um olho clínico para o que combina com cada rosto. Saí com uma confiança que não esperava."</p>
-            <div class="review-card__author">
-              <div class="review-card__avatar">M</div>
-              <div>
-                <strong>Marcos Alves</strong>
-                <span>Cliente há 3 anos</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="review-card review-card--featured" data-anim="fade-up" data-delay="1">
-            <div class="review-card__quote" aria-hidden="true">"</div>
-            <div class="review-card__stars">★★★★★</div>
-            <p class="review-card__text">"Fiz o Dia do Noivo aqui. Corte, barba e massagem no mesmo dia. Cheguei no casamento me sentindo o melhor versão de mim mesmo. Recomendo demais para qualquer noivo."</p>
-            <div class="review-card__author">
-              <div class="review-card__avatar">R</div>
-              <div>
-                <strong>Rodrigo Mendes</strong>
-                <span>Pacote Dia do Noivo</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="review-card" data-anim="fade-up" data-delay="2">
-            <div class="review-card__stars">★★★★★</div>
-            <p class="review-card__text">"Ambiente sofisticado, profissionais atenciosos e o resultado sempre supera o esperado. Não troco por nada. Já indiquei para mais de 10 amigos."</p>
-            <div class="review-card__author">
-              <div class="review-card__avatar">F</div>
-              <div>
-                <strong>Felipe Costa</strong>
-                <span>Cliente frequente</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Rating geral -->
-        <div class="rating-bar" data-anim="fade-up">
-          <div class="rating-bar__score">4.9</div>
-          <div class="rating-bar__info">
-            <div class="rating-bar__stars">★★★★★</div>
-            <span>Baseado em +800 avaliações no Google</span>
-          </div>
-          <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="btn btn-gold">
-            <i class="fab fa-whatsapp"></i> Agende sua visita
-          </a>
-        </div>
-
+      <div class="vis-price">
+        <div class="vis-plbl">a partir de</div>
+        <div class="vis-pval">R$ 150</div>
+        <a href="https://wa.me/5541999999999" target="_blank" rel="noopener"
+           class="btn btn-gold" style="margin-top:16px;">
+          <i class="fas fa-calendar-check"></i> Agendar
+        </a>
       </div>
-    </section>
+    </div>
 
-    <!-- ══════════════════════════════════════
-         CTA FINAL
-    ══════════════════════════════════════ -->
-    <section class="cta-section" data-anim="fade-up">
-      <div class="cta-section__bg" aria-hidden="true"></div>
-      <div class="container">
-        <div class="cta-section__inner">
-          <span class="sh__tag">Pronto para começar?</span>
-          <h2 class="cta-section__title">Seu próximo corte<br><em>começa com uma mensagem.</em></h2>
-          <p class="cta-section__sub">Atendemos de terça a sábado. Resposta rápida pelo WhatsApp.</p>
-          <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="btn btn-wa">
-            <i class="fab fa-whatsapp"></i> Falar no WhatsApp
-          </a>
+    <!-- Grid de preços -->
+    <div class="price-grid fi">
+
+      <div class="price-card">
+        <div class="pc-hd">
+          <div class="pc-icon"><i class="fas fa-cut"></i></div>
+          <div class="pc-title">Cabelo</div>
         </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ══════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════ -->
-  <footer id="contato" class="footer">
-    <div class="container">
-      <div class="footer__grid">
-
-        <div class="footer__col">
-          <div class="logo footer__logo">
-            <div class="logo__mark"><span class="logo__bl">BL</span></div>
-            <div class="logo__txt">
-              <span class="logo__name">Premier</span>
-              <span class="logo__tag">Black Label</span>
-            </div>
-          </div>
-          <p class="footer__desc">Tradição, técnica e experiência premium. Para o homem que valoriza cada detalhe.</p>
-          <div class="footer__socials">
-            <a href="#" class="soc-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="soc-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="soc-btn soc-btn--wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          </div>
-        </div>
-
-        <div class="footer__col">
-          <h3 class="footer__h"><i class="fas fa-clock"></i> Horário</h3>
-          <table class="hours-table">
-            <tbody>
-              <tr><td class="ht-day">Segunda</td><td class="ht-closed">Fechado</td></tr>
-              <tr><td class="ht-day">Terça – Sexta</td><td class="ht-time">09h – 19h</td></tr>
-              <tr><td class="ht-day">Sábado</td><td class="ht-time">09h – 17h</td></tr>
-              <tr><td class="ht-day">Domingo</td><td class="ht-closed">Fechado</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="footer__col">
-          <h3 class="footer__h"><i class="fas fa-map-marker-alt"></i> Onde estamos</h3>
-          <address class="footer__addr">
-            Rua Exemplo, 100<br>
-            Bairro Batel — Curitiba, PR<br>
-            CEP 80420-000
-          </address>
-          <a href="tel:+5541999999999" class="footer__contact"><i class="fas fa-phone"></i> (41) 9 9999-9999</a>
-          <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="footer__contact footer__contact--wa">
-            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
-          </a>
-        </div>
-
+        <div class="pr-row"><span class="pr-name">Corte Visagista</span><span class="pr-val">R$ 95</span></div>
+        <div class="pr-row"><span class="pr-name">Passada de Máquina</span><span class="pr-val">R$ 55</span></div>
+        <div class="pr-row"><span class="pr-name">Tintura</span><span class="pr-val">R$ 90</span></div>
+        <div class="pr-row"><span class="pr-name">Hidratação Capilar</span><span class="pr-val">R$ 80</span></div>
       </div>
 
-      <div class="footer__bottom">
+      <div class="price-card">
+        <div class="pc-hd">
+          <div class="pc-icon"><i class="fas fa-spa"></i></div>
+          <div class="pc-title">Barba</div>
+        </div>
+        <div class="pr-row"><span class="pr-name">Barba Completa</span><span class="pr-val">R$ 70</span></div>
+        <div class="pr-row"><span class="pr-name">Corte + Barba</span><span class="pr-val">R$ 150</span></div>
+        <div class="pr-row"><span class="pr-name">Acabamento</span><span class="pr-val">R$ 35</span></div>
+        <div class="pr-row"><span class="pr-name">Design de Barba</span><span class="pr-val">R$ 50</span></div>
+      </div>
+
+      <div class="price-card">
+        <div class="pc-hd">
+          <div class="pc-icon"><i class="fas fa-heartbeat"></i></div>
+          <div class="pc-title">Bem-Estar</div>
+        </div>
+        <div class="pr-row"><span class="pr-name">Massagem Relaxante</span><span class="pr-val">R$ 130</span></div>
+        <div class="pr-row"><span class="pr-name">Massagem Terapêutica</span><span class="pr-val">R$ 170</span></div>
+        <div class="pr-row"><span class="pr-name">Limpeza de Pele</span><span class="pr-val">R$ 120</span></div>
+        <div class="pr-row"><span class="pr-name">Podologia</span><span class="pr-val">R$ 130</span></div>
+      </div>
+
+    </div>
+
+    <!-- CTA central -->
+    <div class="booking fi">
+      <div class="sh" style="margin-bottom:0;">
+        <span class="sh__tag">Agende já</span>
+        <h2 class="sh__title" style="font-size:clamp(1.6rem,3vw,2.2rem);">Pronto para o melhor corte da sua vida?</h2>
+      </div>
+      <div class="booking__ctas">
+        <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="btn btn-wa">
+          <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+        </a>
+        <a href="#depoimentos" class="btn btn-outline">Ver Avaliações</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ DEPOIMENTOS ══ -->
+<section id="depoimentos" class="section section--black">
+  <div class="container">
+
+    <div class="sh fi">
+      <span class="sh__tag">O que dizem sobre nós</span>
+      <h2 class="sh__title">Avaliações dos Clientes</h2>
+      <div class="sh__rule"></div>
+      <p class="sh__lead">Mais de 800 avaliações 5 estrelas no Google. Veja o que nossos clientes falam.</p>
+    </div>
+
+    <div class="test-grid">
+
+      <div class="test-card fi">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-quote">"Melhor barbearia que já fui em Curitiba. Têm um olho clínico para o que combina com cada rosto. Saí com uma confiança que não esperava."</p>
+        <div class="test-foot">
+          <div class="test-avatar-ph">M</div>
+          <div>
+            <div class="test-name">Marcos Alves</div>
+            <div class="test-city">Cliente há 3 anos</div>
+          </div>
+          <span class="test-src">Google</span>
+        </div>
+      </div>
+
+      <div class="test-card fi">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-quote">"Fiz o Dia do Noivo aqui. Corte, barba e massagem. Cheguei no casamento me sentindo a melhor versão de mim mesmo. Recomendo demais."</p>
+        <div class="test-foot">
+          <div class="test-avatar-ph">R</div>
+          <div>
+            <div class="test-name">Rodrigo Mendes</div>
+            <div class="test-city">Pacote Dia do Noivo</div>
+          </div>
+          <span class="test-src">Google</span>
+        </div>
+      </div>
+
+      <div class="test-card fi">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-quote">"Ambiente sofisticado, profissionais atenciosos e o resultado sempre supera o esperado. Não troco por nada. Já indiquei pra mais de 10 amigos."</p>
+        <div class="test-foot">
+          <div class="test-avatar-ph">F</div>
+          <div>
+            <div class="test-name">Felipe Costa</div>
+            <div class="test-city">Cliente frequente</div>
+          </div>
+          <span class="test-src">Google</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="rating-bar fi">
+      <div>
+        <div class="hero__sv" style="font-size:3rem;">4.9</div>
+        <div class="test-stars" style="font-size:18px;margin-top:6px;">★★★★★</div>
+      </div>
+      <div style="flex:1;">
+        <div style="font-size:14px;color:var(--gray);font-weight:500;">Avaliação média no Google</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:4px;">Baseado em +800 avaliações de clientes reais</div>
+      </div>
+      <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="btn btn-gold">
+        <i class="fab fa-whatsapp"></i> Agendar agora
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer id="contato" class="footer">
+  <div class="container">
+    <div class="footer__grid">
+
+      <div>
+        <a href="#inicio" class="logo footer__logo" aria-label="Barbearia Premier">
+          <div class="logo__diamond"><span class="logo__ltr">BL</span></div>
+          <div class="logo__txt">
+            <div class="logo__brand">Premier</div>
+            <div class="logo__sub">Black Label</div>
+          </div>
+        </a>
+        <p class="footer__addr">Tradição, técnica e experiência premium. Para o homem que valoriza cada detalhe.</p>
+        <div class="footer__socials">
+          <a href="#" class="soc-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="soc-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="soc-btn soc-btn--wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer__h"><i class="fas fa-clock"></i> Horário</h3>
+        <table class="hours-table">
+          <tbody>
+            <tr><td class="ht-day">Segunda</td><td class="ht-closed">Fechado</td></tr>
+            <tr><td class="ht-day">Terça – Sexta</td><td class="ht-time">09h – 19h</td></tr>
+            <tr><td class="ht-day">Sábado</td><td class="ht-time">09h – 17h</td></tr>
+            <tr><td class="ht-day">Domingo</td><td class="ht-closed">Fechado</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <h3 class="footer__h"><i class="fas fa-map-marker-alt"></i> Onde estamos</h3>
+        <address class="footer__addr">
+          <i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:6px;"></i>
+          Rua Exemplo, 100 — Batel<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Curitiba, PR — CEP 80420-000
+        </address>
+        <div class="footer__ct"><i class="fas fa-phone"></i> (41) 9 9999-9999</div>
+        <div class="footer__ct" style="color:var(--wa);"><i class="fab fa-whatsapp" style="color:var(--wa);"></i>
+          <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" style="color:var(--wa);">Chamar no WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bot">
+      <div class="footer__bot-inner">
         <span class="footer__copy">© 2025 Barbearia Premier Black Label — Todos os direitos reservados.</span>
         <span class="footer__tagline"><em>Tradição é detalhe.</em></span>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <!-- WhatsApp flutuante -->
-  <a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+<!-- WhatsApp float -->
+<a href="https://wa.me/5541999999999" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

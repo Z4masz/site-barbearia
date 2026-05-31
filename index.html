@@ -4,63 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Barbearia Premium</title>
+  <title>Barbearia do X</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="container">
+  <header>
+    <h1>Barbearia do X</h1>
+    <p>(41) 9 9663-7244 • Curitiba - PR</p>
 
-    <h1>Barbearia Premium</h1>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#clube">Clube</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
 
-    <p class="subtitle">Corte masculino • Barba • Estilo moderno</p>
+    <a class="btn" href="https://wa.me/5541996637244">Agendar no WhatsApp</a>
+  </header>
 
-    <div class="box">
-      <h2>📅 Horários disponíveis</h2>
-      <p>Seg - Sáb: 09h às 19h</p>
-      <p>Dom: fechado</p>
+  <section class="hero">
+    <h2>VENHA NOS CONHECER</h2>
+    <p>Estilo, precisão e cuidado em cada corte.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" />
+        <h3>Corte Masculino</h3>
+        <p>Estilo moderno adaptado ao seu rosto.</p>
+        <span>R$ 45</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033" />
+        <h3>Barba</h3>
+        <p>Acabamento preciso e visual alinhado.</p>
+        <span>R$ 35</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486" />
+        <h3>Camuflagem</h3>
+        <p>Disfarce de fios brancos com naturalidade.</p>
+        <span>R$ 60</span>
+      </div>
+
     </div>
+  </section>
 
-    <div class="box">
-      <h2>⏰ Agenda de hoje</h2>
-      <p>10:00 - Livre</p>
-      <p>11:30 - Livre</p>
-      <p>14:00 - Ocupado</p>
-      <p>16:00 - Livre</p>
+  <section id="clube">
+    <h2>Nosso Clube</h2>
+
+    <div class="clube-box">
+      <p><b>Corte ilimitado + barba ilimitada</b></p>
+      <p>Agenda exclusiva e descontos em produtos</p>
+      <p>Indique amigos e ganhe benefícios</p>
+
+      <h3>R$ 147,90 / mês</h3>
+
+      <button>Assinar Clube</button>
     </div>
+  </section>
 
-    <div class="box">
-      <h2>💈 Serviços</h2>
-      <p>Corte masculino moderno</p>
-      <p>Barba desenhada</p>
-      <p>Sombrancelha</p>
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+
+    <div class="grid">
+      <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb" />
+      <img src="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1" />
+      <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c" />
     </div>
+  </section>
 
-    <div class="box">
-      <h2>⭐ Avaliações</h2>
+  <section id="avaliacoes">
+    <h2>Google Reviews</h2>
 
-      <p>“Atendimento muito bom e corte perfeito” — João</p>
-      <p>“Ambiente top e profissional excelente” — Lucas</p>
-      <p>“Sempre saio satisfeito, recomendo demais” — Rafael</p>
+    <div class="review">⭐ Excelente atendimento e corte perfeito — João</div>
+    <div class="review">⭐ Profissionais muito bons — Lucas</div>
+    <div class="review">⭐ Sempre saio satisfeito — Rafael</div>
+  </section>
 
-    </div>
+  <section id="mapa">
+    <h2>Localização</h2>
 
-    <div class="box">
-      <h2>📸 Instagram</h2>
-      <p>@barbeariapremium</p>
-    </div>
+    <iframe
+      src="https://www.google.com/maps?q=R.+Augusto+de+Mari,+3671+Curitiba&output=embed"
+      width="100%"
+      height="250"
+      style="border:0;border-radius:12px;"
+      loading="lazy">
+    </iframe>
+  </section>
 
-    <a class="btn" href="https://wa.me/5500000000000">
-      Agendar no WhatsApp
-    </a>
-
-  </div>
+  <footer id="contato">
+    <p>Instagram @barbeariadox</p>
+    <p>Rua Augusto de Mari, 3671 - Curitiba</p>
+  </footer>
 
 </body>
 </html>

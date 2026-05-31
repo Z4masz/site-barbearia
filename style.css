@@ -1,12 +1,18 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
-  color: white;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  color: white;
+
+  background: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80");
+
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -28,13 +34,12 @@ p {
 }
 
 .box {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.08);
   padding: 15px;
   margin: 15px 0;
-  border-radius: 12px;
-  backdrop-filter: blur(8px);
-
-  transition: transform 0.2s ease;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
 .box:hover {
@@ -43,15 +48,20 @@ p {
 
 .btn {
   display: block;
-  background: #25D366;
+  background: linear-gradient(135deg, #25D366, #1ebe5d);
   color: black;
   padding: 15px;
   margin-top: 25px;
-  border-radius: 12px;
+  border-radius: 14px;
   text-decoration: none;
   font-weight: bold;
 
-  transition: all 0.2s ease;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
 
 .btn:hover {
